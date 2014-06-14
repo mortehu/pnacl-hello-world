@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<title>Hello, world!</title>
+<script>
+function handleMessage(message_event) { }
+</script>
+<style>
+  #listener { position: fixed; top: 0; right: 0; bottom: 0; left: 0; }
+  embed { margin: 0; padding: 0; width: 100%; height: 100%; }
+</style>
+<div id=listener>
+  <script>
+    function moduleDidLoad() {
+      console.log("Module Loaded");
+    }
+
+    function handleMessage(msg) {
+      console.log(msg);
+    }
+
+    var listener = document.getElementById('listener');
+    listener.addEventListener('load', moduleDidLoad, true);
+    listener.addEventListener('message', handleMessage, true);
+  </script>
+  <embed src=main_pnacl.nmf type=application/x-pnacl>
+</div>
