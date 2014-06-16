@@ -11,4 +11,4 @@ distributed with the NaCl SDK, run:
 Warning: The web server listens by default on all interfaces, so other
 (hostile) devices may be able to connect to it.
 
-A [//mortehu.github.io/pnacl-hello-world/](live demo) is available.
+A [live demo](//mortehu.github.io/pnacl-hello-world/) is available.
