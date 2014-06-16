@@ -1,3 +1,9 @@
-*.bc
+*.cache
+*.log
+*.o
 *.pexe
+*.status
 .*.sw?
+.deps
+/Makefile
+/hello_world
